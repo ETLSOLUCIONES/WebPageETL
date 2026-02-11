@@ -3,7 +3,7 @@ import { ServicesComponent } from '../../items/services/services.component';
 import { QuestionComponent } from './question/question.component';
 import { NumbersComponent } from './numbers/numbers.component';
 import { AccordionComponent } from './accordion/accordion.component';
-import { Text } from '../../models/texts';
+import { Text } from '../../helpers/texts';
 
 @Component({
   selector: 'app-environment-automation-service',

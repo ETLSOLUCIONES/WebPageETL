@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Text } from '../../../models/texts';
+import { Text } from '../../../helpers/texts';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 

@@ -1,12 +1,13 @@
 export const Text: any = {
-    Nabvar: {
+    Navbar: {
         Menu:[
             {title: 'Inicio', subMenu: [], link:'/principal'},
             {title: 'Servicios', subMenu: [
-                {subTitle: 'Consultoría', link:'/consultingService'},
-                {subTitle: 'Innovación', link:'/innovationService'},
-                {subTitle: 'BPO', link:'/bpoService'},
-                {subTitle: 'Automatización de ambiente QA', link:'/environmentAutomation'}
+                {subTitle: 'Gestión de Operaciones de TI', link:'/consultingService'},
+                {subTitle: 'Gestión de Datos', link:'/innovationService'},
+                {subTitle: 'Automatización de Procesos', link:'/bpoService'},
+                {subTitle: 'Fabrica de Software', link:'/environmentAutomation'},
+                {subTitle: 'Calidad de Software', link:'/environmentAutomation'},
             ], link:''},
             {title: 'Productos', subMenu: [
                 {subTitle: 'Infocusnews', link:'/infocusnwesProduct'},

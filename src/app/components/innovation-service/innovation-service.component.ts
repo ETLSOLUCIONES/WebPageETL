@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicesComponent } from '../../items/services/services.component';
-import { Text } from '../../models/texts';
+import { Text } from '../../helpers/texts';
 
 @Component({
   selector: 'app-innovation-service',

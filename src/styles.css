@@ -21,7 +21,6 @@
     box-sizing: content-box;
     box-sizing: border-box;
     line-height: 1.5;
-
 }
 
 body {
@@ -95,6 +94,7 @@ body {
     /*Cards Nosotros*/
     --card_aboutUs_color: #F7FDFF;
     --error_message: rgba(177, 0, 0, 0.842);
+    --line_color: #C5D9E4;
 
     .filter {
         filter:
@@ -147,18 +147,14 @@ body {
         --box-shadow_two_sides: 0px 0px 20px 3px rgba(100, 100, 100, 0.2);
         --box_container: #293241;
         --box_container_image: #1C222C;
-
         --background_section_numbers: #1C222C;
         --cards_section_numbers: #293241;
-
         --card_ability_color: #1D2126;
         --card_ability_color_hover: #293241;
-
         --highlight_color: #00B1ED;
-
         --card_aboutUs_color: #293241;
-
         --error_message: rgba(107, 107, 107, 0.76);
+        --line_color: #0D0E11;
 
         .filter {
             filter:
@@ -193,8 +189,7 @@ body {
 
 .custom_button:hover {
     background-color: var(--hover_color);
-    box-shadow: 0 0 0 2px var(--background_color),
-        0 0 0 3px #00b2edc0;
+    box-shadow: 0 0 0 2px var(--background_color), 0 0 0 3px #00b2edc0;
     text-decoration: none;
     color: var(--pure_white);
 }

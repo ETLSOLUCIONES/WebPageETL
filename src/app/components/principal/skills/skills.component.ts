@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { Text } from '../../../models/texts';
+import { Text } from '../../../helpers/texts';
 
 @Component({
   selector: 'app-skills',

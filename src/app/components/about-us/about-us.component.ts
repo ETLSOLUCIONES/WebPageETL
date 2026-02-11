@@ -3,7 +3,7 @@ import { WelcomeAboutUsComponent } from './welcome-about-us/welcome-about-us.com
 import { CounterComponent } from '../principal/counter/counter.component';
 import { AbilityComponent } from './ability/ability.component';
 import { InfoAboutUsComponent } from './info-about-us/info-about-us.component';
-import { Text } from '../../models/texts';
+import { Text } from '../../helpers/texts';
 import { CommonModule } from '@angular/common';
 
 @Component({

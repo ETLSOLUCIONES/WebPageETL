@@ -17,13 +17,14 @@
               {{ menuItem.title }}
             </a>
           </li>
-          <li class="nav-item dropdown" *ngIf="menuItem.subMenu.length > 0">
-            <a class="nav-link dropdown-toggle" href="#" (click)="toggleSubMenu($event, i)">
+          <li class="nav-item dropdown" *ngIf="menuItem.subMenu.length > 0" (mouseenter)="toggleSubMenu($event, i, true)" (mouseleave)="toggleSubMenu($event, i, false)">
+            <a class="nav-link dropdown-toggle" [ngClass]="{'rotated': subMenus[i]}">
               {{ menuItem.title }}
             </a>
+            <div style="padding-bottom: 3px;"></div>
             <ul class="dropdown-menu" [ngClass]="{'show': subMenus[i]}">
               <li *ngFor="let subMenuItem of menuItem.subMenu">
-                <a class="dropdown-item" [routerLink]="[subMenuItem.link]" routerLinkActive="router-link-active" (click)="closeMenu()">
+                <a class="dropdown-item" [ngClass]="{'selected': subMenus[i]}" [routerLink]="[subMenuItem.link]" routerLinkActive="router-link-active" (click)="closeMenu()">
                   {{ subMenuItem.subTitle }}
                 </a>
               </li>
@@ -31,8 +32,7 @@
           </li>
         </ng-container>
       </ul>
-
-      <a href="#" class="btn btn-primary ms-3" (click)="scrollToContact()">Contacto</a>
+      <a class="custom_button ms-3" (click)="scrollToContact()">Contacto</a>
     </div>
   </div>
 </nav>

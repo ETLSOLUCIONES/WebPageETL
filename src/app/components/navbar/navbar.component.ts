@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Text } from '../../models/texts';
+import { Text } from '../../helpers/texts';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-nabvar',
+  selector: 'app-navbar',
   imports: [RouterModule, CommonModule],
-  templateUrl: './nabvar.component.html',
-  styleUrl: './nabvar.component.css'
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class NabvarComponent implements OnInit{
+export class NavbarComponent implements OnInit{
 
   menuItems: any = [];
   menuOpen: boolean = false;
   subMenus: boolean[] = [];
   isDarkMode: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {
-    this.menuItems = Text.Nabvar.Menu;
+    this.menuItems = Text.Navbar.Menu;
     this.subMenus = new Array(this.menuItems.length).fill(false);
   }
 
@@ -33,9 +33,9 @@ export class NabvarComponent implements OnInit{
     this.subMenus.fill(false);
   }
 
-  toggleSubMenu(event: Event, index: number): void {
+  toggleSubMenu(event: Event, index: number, isOpen: boolean): void {
     event.preventDefault();
-    this.subMenus[index] = !this.subMenus[index];
+    this.subMenus[index] = isOpen;
   }
 
   scrollToContact(): void {

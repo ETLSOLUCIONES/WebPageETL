@@ -79,16 +79,32 @@
 .piece_1 {
     top: 5%;
     right: 35%;
+    animation: flotar 2.5s ease-in-out infinite;
 }
 
 .piece_2 {
     bottom: 20%;
     right: 5%;
+    animation: flotar 3.5s ease-in-out infinite 0.5s;
 }
 
 .piece_3 {
     bottom: 13%;
     right: 45%;
+    animation: flotar 3s ease-in-out infinite 1s;
+}
+
+.custom_button:hover{
+    margin-left: 3px;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-24px) rotate(2deg);
+    }
 }
 
 @media only screen and (max-width: 1200px) {
