@@ -14,7 +14,6 @@
     position: relative;
     height: 14vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow_two_sides);
 }
@@ -45,7 +44,7 @@
 
 .logos_slide {
     display: flex;
-    animation: 45s slide infinite linear;
+    animation: slide infinite linear;
     width: max-content;
 }
 
