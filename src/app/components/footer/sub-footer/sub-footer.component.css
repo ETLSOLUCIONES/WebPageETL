@@ -63,6 +63,8 @@
 
 .sub_footer .content_footer .content_menu_footer .content-menu .menu-items {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sub_footer .content_footer .content_menu_footer .content-menu .menu-items .item {
@@ -74,11 +76,13 @@
     font-size: 1.2rem;
     color: var(--pure_white);
     cursor: pointer;
+    text-shadow: 0 0 0 transparent;
+    transition: text-shadow 0.5s ease;
 }
 
 .sub_footer .content_footer .content_menu_footer .content-menu .menu-items .item a:hover {
     color: var(--hover_color_footer);
-    font-weight: var(--font_weight_semi_bold);
+    text-shadow: 0 0 8px currentColor;
 }
 
 .sub_footer .content_footer .content_image {

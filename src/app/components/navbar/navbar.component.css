@@ -32,6 +32,7 @@ span {
 
 .navbar-nav .nav-item {
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .navbar-nav .nav-link {

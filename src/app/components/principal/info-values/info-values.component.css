@@ -4,6 +4,8 @@
     background: var(--background_color);
     margin-top: 30px;
     position: relative;
+    box-shadow: var(--box-shadow_two_sides);
+    border-radius: 50px;
   }
   
   .service-item {

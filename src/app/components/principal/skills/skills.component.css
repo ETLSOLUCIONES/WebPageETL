@@ -15,21 +15,30 @@
     position: absolute;
     width: 5%;
     z-index: 100;
+    box-shadow: var(--box_shadow);
+    border-radius: 50%;
+    z-index: 10;
 }
 
 .skills .circle.circle1{
     top: 0;
-    left: 0;
+    left: 40px;
+    animation: orbita 6s linear infinite;
+    transform-origin: center;
 }
 
 .skills .circle.circle2{
     top: 500px;
-    left: 0;
+    left: 40px;
+    animation: orbita 7s linear infinite reverse;
+    transform-origin: center;
 }
 
 .skills .circle.circle3{
     top: 300px;
-    right: 0;
+    right: 40px;
+    animation: orbita 8s linear infinite reverse;
+    transform-origin: center;
 }
 
 .skills .content_skills{
@@ -96,6 +105,15 @@
     border-radius: 50%;
     color: var(--pure_primary_color);
     font-weight:  var(----font_weight_semi_bold);
+}
+
+@keyframes orbita {
+    0% {
+        transform: rotate(0deg) translateX(20px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
 }
 
 @media only screen and (max-width: 1200px){
