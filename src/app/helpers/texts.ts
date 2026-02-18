@@ -3,16 +3,16 @@ export const Text: any = {
         Menu:[
             {title: 'Inicio', subMenu: [], link:'/principal'},
             {title: 'Servicios', subMenu: [
-                {subTitle: 'Gestión de Operaciones de TI', link:'/consultingService'},
-                {subTitle: 'Gestión de Datos', link:'/innovationService'},
-                {subTitle: 'Automatización de Procesos', link:'/bpoService'},
-                {subTitle: 'Fabrica de Software', link:'/environmentAutomation'},
-                {subTitle: 'Calidad de Software', link:'/environmentAutomation'},
+                {subTitle: 'Gestión de Operaciones de TI', link:'/services/itOperationsManagementService'},
+                {subTitle: 'Gestión de Datos', link:'/services/dataManagementService'},
+                {subTitle: 'Automatización de Procesos', link:'/services/processAutomationService'},
+                {subTitle: 'Fabrica de Software', link:'/services/softwareFactoryService'},
+                {subTitle: 'Calidad de Software', link:'/services/softwareQualityService'},
             ], link:''},
             {title: 'Productos', subMenu: [
-                {subTitle: 'Infocusnews', link:'/infocusnwesProduct'},
-                {subTitle: 'Business Intelligence', link:'/businessIntelligenceProduct'},
-                {subTitle: 'Innovación', link:'/innovationProduct'},
+                {subTitle: 'Infocusnews', link:'/products/infocusnwesProduct'},
+                {subTitle: 'Business Intelligence', link:'/products/businessIntelligenceProduct'},
+                {subTitle: 'Innovación', link:'/products/innovationProduct'},
             ], link:''},
             {title: 'Nosotros', subMenu: [], link:'/aboutUs'}
         ]
@@ -28,28 +28,44 @@ export const Text: any = {
             Text: 'A través de las mejores prácticas de TI, damos soluciones de gran valor a nuestros clientes a través de nuestros servicios.',
             ServicesList: [
                 {
-                    title: 'Consultoría',
-                    description: 'Servicios de asesoría integral en gestión de procesos para garantizar que las soluciones tecnológicas.',
+                    title: 'Gestión de Operaciones de TI',
+                    description: 'Servicio integral orientado a asegurar que los recursos tecnológicos de su organización operen con el máximo rendimiento, estabilidad y disponibilidad.',
                     image: './assets/images/consultoria.jpg',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
-                    url: '/consultingService'
+                    url: '/services/itOperationsManagementService'
                 },
                 {
-                    title: 'Innovación',
-                    description: 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.',
+                    title: 'Gestión de Datos',
+                    description: 'Servicio enfocado en administrar la información de forma segura, confiable y alineada con los objetivos estratégicos del negocio.',
                     image: './assets/images/innovacion.jpg',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
-                    url: '/innovationService'
+                    url: '/services/dataManagementService'
                 },
                 {
-                    title: 'BPO',
-                    description: 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.',
+                    title: 'Automatización de Procesos',
+                    description: 'Servicio de automatización inteligente para optimizar flujos de trabajo, reducir errores y aumentar la productividad operacional de su organización.',
                     image: './assets/images/bpo.jpg',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
-                    url: '/bpoService'
+                    url: '/services/processAutomationService'
+                },
+                {
+                    title: 'Fábrica de Software',
+                    description: 'Servicio de desarrollo de software personalizado para crear soluciones escalables, robustas y alineadas con los objetivos estratégicos de su organización.',
+                    image: './assets/images/consultoria.jpg',
+                    circle1: './assets/icons/circle1.png',
+                    circle2: './assets/icons/circle2.png',
+                    url: '/services/softwareFactoryService'
+                },
+                {
+                    title: 'Calidad de Software',
+                    description: 'Servicio de aseguramiento de calidad para garantizar que cada solución tecnológica cumpla con los más altos estándares de funcionalidad, rendimiento y seguridad.',
+                    image: './assets/images/innovacion.jpg',
+                    circle1: './assets/icons/circle1.png',
+                    circle2: './assets/icons/circle2.png',
+                    url: '/services/softwareQualityService'
                 },
             ]
         },
@@ -68,10 +84,30 @@ export const Text: any = {
             Title1: 'Innovar con las tendencias tecnológicas',
             Text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             ProductsList: [
-                { title: 'Infocusnews', icon: './assets/icons/text.png', text: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos…', url:'/infocusnwesProduct' },
-                { title: 'ETL (BI) Business Intelligence', icon: './assets/icons/db.png', text: 'Servicio de gestión en nube o infraestructura propia del cliente para diseñar…', url:'/businessIntelligenceProduct' },
-                { title: 'Motor de Sugerencias', icon: './assets/icons/start.png', text: 'El motor de sugerencia mide las preferencias de los clientes a cada una de ellas…', url:'/infocusnwesProduct' },
-                { title: 'Innovación', icon: './assets/icons/podio.png', text: 'Identificación de las preferencias individuales de sus clientes con máximo detalle…', url:'/innovationProduct' },
+                { 
+                    title: 'Infocusnews', 
+                    icon: './assets/icons/text.png', 
+                    text: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos…', 
+                    url:'/products/infocusnwesProduct' 
+                },
+                { 
+                    title: 'ETL (BI) Business Intelligence', 
+                    icon: './assets/icons/db.png', 
+                    text: 'Servicio de gestión en nube o infraestructura propia del cliente para diseñar…', 
+                    url:'/products/businessIntelligenceProduct' 
+                },
+                { 
+                    title: 'Motor de Sugerencias', 
+                    icon: './assets/icons/start.png', 
+                    text: 'El motor de sugerencia mide las preferencias de los clientes a cada una de ellas…', 
+                    url:'/products/infocusnwesProduct' 
+                },
+                { 
+                    title: 'Innovación', 
+                    icon: './assets/icons/podio.png', 
+                    text: 'Identificación de las preferencias individuales de sus clientes con máximo detalle…', 
+                    url:'/products/innovationProduct' 
+                },
             ]
         },
         InfoValues: {
@@ -119,77 +155,163 @@ export const Text: any = {
             ]
         }
     },
-    Service: {
-        Consulting: {
+    Services: {
+        ItOperationsManagement: {
             Title:{
-                Title: 'Consultoría',
-                Text: 'Mayor retorno a su Negocio',
+                Title: 'Gestión de Operaciones de TI',
+                Text: 'Garantizamos la eficiencia y disponibilidad de su infraestructura tecnológica',
                 Img: './assets/wallpapers/wallp_consultoria.jpg'
             },
             Description: {
-                Title: 'Asesorías Integrales',
-                Text1: 'Servicios de asesoría integral en gestión de procesos para garantizar que las soluciones tecnológicas de su organización son mayor retorno posible a su negocio.',
+                Title: 'Supervisión y Optimización Continua',
+                Text1: 'Servicio integral orientado a asegurar que los recursos tecnológicos de su organización operen con el máximo rendimiento, estabilidad y disponibilidad.',
                 Img: './assets/images/consultoria_left.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: '<p>Consisten en un servicio de asesoría especializada e independiente al que recurren las empresas en diferentes industrias con el fin de encontrar, soluciones a uno o más problemas y/o mejoras de negocio. </p> </br> <p>Nuestros servicios de consultoría son parte de las grandes soluciones que te ofrece ETL. </p> </br> <p>Las consultorías consisten en un servicio de asesoría especializada e independiente al que recurren las empresas en diferentes industrias con el fin de encontrar, soluciones a uno o más problemas y/o mejoras de negocio. Por esto, nuestros servicios de consultoría son parte de las grandes soluciones que te ofrece ETL. </p>'
+                Text2: `<p>La gestión de operaciones de TI se encarga de administrar, monitorear y optimizar la infraestructura tecnológica, incluyendo redes, aplicaciones, bases de datos y recursos informáticos, tanto en entornos On-Premise como en la nube.</p>
+                        </br> 
+                        <p>En ETL Soluciones hemos desarrollado un modelo basado en experiencia multisectorial que permite supervisar y optimizar continuamente las operaciones tecnológicas mediante el uso de Inteligencia Artificial en procesos como:</p> 
+                        </br> 
+                        <ul class="list" >
+                            <li><strong>Análisis predictivo:</strong> anticipación de fallos y cuellos de botella.</li>
+                            <li><strong>Procesamiento de lenguaje natural:</strong> gestión eficiente de tickets e interacción con usuarios mediante chatbots.</li>
+                            <li><strong>Detección de anomalías:</strong> identificación de comportamientos inusuales en tiempo real.</li>
+                        </ul> 
+                        </br> 
+                        <p>Combinamos estas capacidades con automatización de monitoreo, gestión de errores conocidos y despliegues continuos, garantizando estabilidad, eficiencia y alto desempeño.</p>
+                        </br> 
+                        <p>Adoptar IA y automatización no solo mejora la operación actual, sino que prepara a las organizaciones para un entorno tecnológico más ágil, resiliente y competitivo.</p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: 'Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_consultoria.jpg'
             }
         },
-        Innovation: {
+        DataManagement: {
             Title:{
-                Title: 'Innovación',
-                Text: 'Identificando la raíz de cada problema',
+                Title: 'Gestión de Datos',
+                Text: 'Transforme sus datos en activos estratégicos de valor',
                 Img: './assets/wallpapers/wallp_innovation.png'
             },
             Description: {
-                Title: 'Reingeniería, Analítica, Gestión y Procedimientos de Datos',
-                Text1: 'Servicios de incluyen procesos de reingeniería, analítica, gestión, y procedimientos de datos para identificar causa raíz de problemas en una organización que sean solucionables mediante el uso de tecnología.',
-                Img: './assets/images/innovation_left.png',
+                Title: 'Calidad, Gobernanza y Analítica Avanzada',
+                Text1: 'Servicio enfocado en administrar la información de forma segura, confiable y alineada con los objetivos estratégicos del negocio.',
+                Img: './assets/images/consultoria_left.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: '<p>A pesar de que la palabra innovación se enfoca en la novedad, se relaciona de igual manera con mejorar y potenciar áreas ya establecidas, ya sean productos servicios o sistemas. </p> </br> <p>En ETL nos encargamos de impulsar a tu empresa a través de diferentes soluciones digitales. </p> </br> <p>Consúltanos ahora. </p>'
+                Text2: `<p>La gestión de datos organiza, protege y asegura la disponibilidad de la información, supervisando su recolección, almacenamiento, integración y gobierno en entornos locales y en la nube.</p>
+                        </br> 
+                        <p>Nuestro modelo, probado en múltiples industrias, permite maximizar el valor de los datos mediante Inteligencia Artificial aplicada a:</p> 
+                        </br> 
+                        <ul class="list" >
+                            <li><strong>Análisis predictivo:</strong> descubrimiento de tendencias y patrones en grandes volúmenes de información.</li>
+                            <li><strong>Calidad de datos:</strong> detección automática de inconsistencias, duplicados y errores.</li>
+                            <li><strong>Clasificación inteligente:</strong> catalogación y etiquetado para una gobernanza eficiente.</li>
+                        </ul> 
+                        </br> 
+                        <p>Integramos estas capacidades con monitoreo continuo y cumplimiento normativo, asegurando confiabilidad y aprovechamiento estratégico de la información.</p>
+                        </br> 
+                        <p>La adopción de IA en la gestión de datos impulsa decisiones oportunas, mejora la eficiencia operativa y fortalece la competitividad empresarial.</p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_innovation.png'
             }
         },
-        BPO: {
+        ProcessAutomation: {
             Title:{
-                Title: 'BPO',
-                Text: 'Optimizando tiempos de respuesta',
+                Title: 'Automatización de Procesos',
+                Text: 'Optimice sus operaciones y libere recursos estratégicos',
                 Img: './assets/wallpapers/wallp_bpo.png'
             },
             Description: {
-                Title: 'Aplicación de técnicas de reingeniería Optimizando tiempos',
-                Text1: 'Servicios tercerizados de bajo costo y alta productividad para nuestros clientes, aplicando técnicas de reingeniería para optimizar tiempos de respuesta y generación de mayor valor.',
+                Title: 'RPA y Transformación Digital',
+                Text1: 'Servicio de automatización inteligente para optimizar flujos de trabajo, reducir errores y aumentar la productividad operacional de su organización.',
                 Img: './assets/images/bpo_left.png',
                 SubTitle: '¿En qué consiste?',
-                Text2: `<p>Business Process Outsourcing Dentro de los Servicios tercerizados tenemos: </p> 
-                            </br>
-                            <ul class="list" >
-                                <li>Soporte</li>
-                                <li>Desarrollo de aplicaciones</li>
-                                <li>Gestión de infraestructura TI</li>
-                                <li>Adecuación y optimización de centros de datos</li>
-                            </ul> 
-                            </br>
-                            <p>Una de las soluciones que tenemos para ofrecerte, es el outsourcing, que consiste en que una empresa contrata nuestros servicios para hacer algo en lo que dicha empresa no se especializa. </p> 
-                            </br> 
-                            <p>Esto libera a la primera organización para enfocarse en la función central de su negocio. </p>
-                            </br> 
-                            <p>Consúltanos ahora. </p>`
+                Text2: `<p>La automatización de procesos permite ejecutar de forma autónoma tareas repetitivas y coordinar flujos de trabajo complejos en procesos de negocio y operaciones tecnológicas.</p> 
+                        </br>
+                        <p>En ETL Soluciones aplicamos un enfoque de mejora continua respaldado por IA a través de:</p>
+                        </br>
+                        <ul class="list" >
+                            <li><strong>RPA inteligente:</strong> robots capaces de aprender y adaptarse a los procesos.</li>
+                            <li><strong>Procesamiento inteligente de documentos:</strong> extracción y clasificación automática de información.</li>
+                            <li><strong>Orquestación de workflows:</strong> coordinación eficiente de procesos entre múltiples sistemas.</li>
+                        </ul> 
+                        </br>
+                        <p>Estas capacidades se integran con tecnologías RPA, BPM, APIs y orquestación de servicios, logrando continuidad operativa, reducción de tiempos y mayor productividad.</p> 
+                        </br> 
+                        <p>La automatización inteligente permite a las organizaciones enfocarse en actividades de alto valor y avanzar con solidez en su transformación digital.</p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_bpo.png'
             }
         },
+        SoftwareFactory: {
+            Title:{
+                Title: 'Fábrica de Software',
+                Text: 'Desarrollamos soluciones tecnológicas a la medida de su negocio',
+                Img: './assets/wallpapers/wallp_bpo.png'
+            },
+            Description: {
+                Title: 'Desarrollo Ágil y Entrega Continua',
+                Text1: 'Servicio de desarrollo de software personalizado para crear soluciones escalables, robustas y alineadas con los objetivos estratégicos de su organización.',
+                Img: './assets/images/bpo_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>Nuestra fábrica de software cubre todo el ciclo de vida del desarrollo: análisis, diseño, construcción, pruebas, despliegue y soporte de aplicaciones web, móviles y sistemas empresariales.</p> 
+                        </br>
+                        <p>El modelo de ETL Soluciones integra prácticas ágiles y capacidades de Inteligencia Artificial como:</p>
+                        </br>
+                        <ul class="list" >
+                            <li><strong>Desarrollo asistido por IA:</strong> generación de código, detección de errores y optimización.</li>
+                            <li><strong>Testing inteligente:</strong> automatización de pruebas y ampliación de cobertura.</li>
+                            <li><strong>Análisis de código:</strong> revisión continua de calidad, seguridad y buenas prácticas.</li>
+                        </ul> 
+                        </br>
+                        <p>Apoyados en DevOps, integración continua y despliegue automatizado, entregamos soluciones robustas, seguras y preparadas para crecer con el negocio.</p> 
+                        </br> 
+                        <p>La combinación de agilidad e IA acelera la innovación y fortalece la ventaja competitiva en el entorno digital.</p>`
+            },
+            Contact: {
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_bpo.png'
+            }
+        },
+        SoftwareQuality: {
+            Title:{
+                Title: 'Calidad de Software',
+                Text: 'Aseguramos la excelencia en cada entrega tecnológica',
+                Img: './assets/wallpapers/wallp_bpo.png'
+            },
+            Description: {
+                Title: 'Testing Inteligente y Aseguramiento Continuo',
+                Text1: 'Servicio de aseguramiento de calidad para garantizar que cada solución tecnológica cumpla con los más altos estándares de funcionalidad, rendimiento y seguridad.',
+                Img: './assets/images/bpo_left.png',
+                SubTitle: '¿En qué consiste?',
+                Text2: `<p>La calidad de software supervisa y valida cada etapa del desarrollo para asegurar que las soluciones cumplan con estándares técnicos y expectativas del negocio, tanto en sistemas nuevos como existentes.</p> 
+                        </br>
+                        <p>Nuestro enfoque incorpora Inteligencia Artificial en:</p>
+                        </br>
+                        <ul class="list" >
+                            <li><strong>Testing predictivo:</strong> identificación temprana de áreas críticas y generación de casos de prueba.</li>
+                            <li><strong>Análisis de defectos:</strong> detección de patrones para prevenir errores recurrentes.</li>
+                            <li><strong>Optimización de performance:</strong> monitoreo y mejora continua del rendimiento.</li>
+                        </ul> 
+                        </br>
+                        <p>Complementamos estas prácticas con pruebas funcionales, de seguridad, rendimiento y automatización continua, asegurando entregas confiables y de alto nivel.</p> 
+                        </br> 
+                        <p>La calidad impulsada por IA reduce riesgos, mejora la experiencia del usuario y permite una transformación digital sólida y sostenible.</p>`
+            },
+            Contact: {
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Img: './assets/wallpapers/contact_bpo.png'
+            }
+        },
+        //Esta ruta se debe validar con el cliente
         EnvironmentAutomation: {
             Title:{
                 Title: 'Automatización de la Gestión de Ambientes de QA',
@@ -206,8 +328,8 @@ export const Text: any = {
                         <p>Con nuestra solución, podrás optimizar la gestión y configuración de tus entornos de prueba de manera ágil y escalable. </p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_qa.png'
             },
             Question: {
@@ -254,7 +376,7 @@ export const Text: any = {
             Description: {
                 Title: 'Información de valor de las compañías',
                 Text1: 'Diario digital que descubre información de valor en su compañía utilizando modelos estadísticos y de tendencia sobre múltiples variables. Diseño, implementación, soporte a soluciones de telefonía de última generación con PBX I P.',
-                Img: './assets/images/infocusnews_right.png',
+                Img: './assets/images/bi_right.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>El análisis de datos y la gestión adecuada de la información son unos componentes decisivos para el crecimiento de una compañía.</p> 
                             </br> 
@@ -263,8 +385,8 @@ export const Text: any = {
                             <p>¿Qué esperas? Consúltanos.</p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_infocusnews.png'
             }
         },
@@ -286,8 +408,8 @@ export const Text: any = {
                             <p>Consúltanos ahora y dale a tu empresa el impulso que te ofrece ETL Soluciones.</p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_bi.png'
             }
         },
@@ -300,15 +422,15 @@ export const Text: any = {
             Description: {
                 Title: 'Análisis y Comportamiento de Mercados',
                 Text1: 'Identificación de las preferencias individuales de sus clientes con máximo detalle, le sugerirá en base a éstas qué productos pueden resultar de mayor interés o necesidad para cada cliente.',
-                Img: './assets/images/innovation_left.png',
+                Img: './assets/images/bi_right.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>Los departamentos de TI han evolucionado con el tiempo, ahora se han vuelto un bien indispensable para las empresas al momento de cambios y soluciones innovadoras, transformando a los negocios y haciendo más notable su presencia en el mercado.</p> 
                         </br> 
                         <p>Consúltanos ahora y encuentra las soluciones ideales para tu empresa. En ETL Soluciones, estamos para servirte.</p>`
             },
             Contact: {
-                Title: 'Contactanos',
-                Text: '¡Contáctanos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
+                Title: 'Contáctenos',
+                Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
                 Img: './assets/wallpapers/contact_innovation_p.png'
             }
         },

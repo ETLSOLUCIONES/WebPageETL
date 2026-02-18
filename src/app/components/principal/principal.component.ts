@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ProductsComponent } from './products/products.component';
@@ -21,6 +21,12 @@ import { InfoValuesComponent } from './info-values/info-values.component';
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.css'
 })
-export class PrincipalComponent {
-
+export class PrincipalComponent implements OnInit {
+  ngOnInit(): void {
+    window.scroll({
+      top: 0,
+      left: 0,
+      //behavior: "smooth",
+    })
+  }
 }

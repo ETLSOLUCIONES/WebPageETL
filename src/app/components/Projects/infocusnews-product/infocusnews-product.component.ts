@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ProductsComponent } from '../../items/products/products.component';
-import { Text } from '../../helpers/texts';
+import { ProductsComponent } from '../../../items/products/products.component';
+import { Text } from '../../../helpers/texts';
 
 @Component({
   selector: 'app-infocusnews-product',
