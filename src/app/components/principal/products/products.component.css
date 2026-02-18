@@ -92,8 +92,8 @@
 .products .components .product .content_info .info .body_info .text_info p{
     color: var(--text_color);
     display: -webkit-box; 
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
