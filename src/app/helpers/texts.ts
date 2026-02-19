@@ -38,7 +38,7 @@ export const Text: any = {
                 {
                     title: 'Gestión de Datos',
                     description: 'Servicio enfocado en administrar la información de forma segura, confiable y alineada con los objetivos estratégicos del negocio.',
-                    image: './assets/images/innovacion.jpg',
+                    image: './assets/images/data_serivce_wallpaper.png',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
                     url: '/services/dataManagementService'
@@ -46,7 +46,7 @@ export const Text: any = {
                 {
                     title: 'Automatización de Procesos',
                     description: 'Servicio de automatización inteligente para optimizar flujos de trabajo, reducir errores y aumentar la productividad operacional de su organización.',
-                    image: './assets/images/bpo.jpg',
+                    image: './assets/images/automation_serivce_wallpaper.png',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
                     url: '/services/processAutomationService'
@@ -54,7 +54,7 @@ export const Text: any = {
                 {
                     title: 'Fábrica de Software',
                     description: 'Servicio de desarrollo de software personalizado para crear soluciones escalables, robustas y alineadas con los objetivos estratégicos de su organización.',
-                    image: './assets/images/consultoria.jpg',
+                    image: './assets/images/dev_serivce_wallpaper.png',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
                     url: '/services/softwareFactoryService'
@@ -62,7 +62,7 @@ export const Text: any = {
                 {
                     title: 'Calidad de Software',
                     description: 'Servicio de aseguramiento de calidad para garantizar que cada solución tecnológica cumpla con los más altos estándares de funcionalidad, rendimiento y seguridad.',
-                    image: './assets/images/innovacion.jpg',
+                    image: './assets/images/qa_serivce_wallpaper.png',
                     circle1: './assets/icons/circle1.png',
                     circle2: './assets/icons/circle2.png',
                     url: '/services/softwareQualityService'
@@ -165,7 +165,7 @@ export const Text: any = {
             Description: {
                 Title: 'Supervisión y Optimización Continua',
                 Text1: 'Servicio integral orientado a asegurar que los recursos tecnológicos de su organización operen con el máximo rendimiento, estabilidad y disponibilidad.',
-                Img: './assets/images/consultoria_left.png',
+                Img: './assets/images/ti_service.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>La gestión de operaciones de TI se encarga de administrar, monitorear y optimizar la infraestructura tecnológica, incluyendo redes, aplicaciones, bases de datos y recursos informáticos, tanto en entornos On-Premise como en la nube.</p>
                         </br> 
@@ -191,12 +191,12 @@ export const Text: any = {
             Title:{
                 Title: 'Gestión de Datos',
                 Text: 'Transforme sus datos en activos estratégicos de valor',
-                Img: './assets/wallpapers/wallp_innovation.png'
+                Img: './assets/wallpapers/data_wallpaper.png'
             },
             Description: {
                 Title: 'Calidad, Gobernanza y Analítica Avanzada',
                 Text1: 'Servicio enfocado en administrar la información de forma segura, confiable y alineada con los objetivos estratégicos del negocio.',
-                Img: './assets/images/consultoria_left.png',
+                Img: './assets/images/data_service.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>La gestión de datos organiza, protege y asegura la disponibilidad de la información, supervisando su recolección, almacenamiento, integración y gobierno en entornos locales y en la nube.</p>
                         </br> 
@@ -222,12 +222,12 @@ export const Text: any = {
             Title:{
                 Title: 'Automatización de Procesos',
                 Text: 'Optimice sus operaciones y libere recursos estratégicos',
-                Img: './assets/wallpapers/wallp_bpo.png'
+                Img: './assets/wallpapers/automation_wallpaper.png'
             },
             Description: {
                 Title: 'RPA y Transformación Digital',
                 Text1: 'Servicio de automatización inteligente para optimizar flujos de trabajo, reducir errores y aumentar la productividad operacional de su organización.',
-                Img: './assets/images/bpo_left.png',
+                Img: './assets/images/automation_service.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>La automatización de procesos permite ejecutar de forma autónoma tareas repetitivas y coordinar flujos de trabajo complejos en procesos de negocio y operaciones tecnológicas.</p> 
                         </br>
@@ -253,12 +253,12 @@ export const Text: any = {
             Title:{
                 Title: 'Fábrica de Software',
                 Text: 'Desarrollamos soluciones tecnológicas a la medida de su negocio',
-                Img: './assets/wallpapers/wallp_bpo.png'
+                Img: './assets/wallpapers/dev_wallpaper.png'
             },
             Description: {
                 Title: 'Desarrollo Ágil y Entrega Continua',
                 Text1: 'Servicio de desarrollo de software personalizado para crear soluciones escalables, robustas y alineadas con los objetivos estratégicos de su organización.',
-                Img: './assets/images/bpo_left.png',
+                Img: './assets/images/dev_service.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>Nuestra fábrica de software cubre todo el ciclo de vida del desarrollo: análisis, diseño, construcción, pruebas, despliegue y soporte de aplicaciones web, móviles y sistemas empresariales.</p> 
                         </br>
@@ -284,12 +284,12 @@ export const Text: any = {
             Title:{
                 Title: 'Calidad de Software',
                 Text: 'Aseguramos la excelencia en cada entrega tecnológica',
-                Img: './assets/wallpapers/wallp_bpo.png'
+                Img: './assets/wallpapers/qa_wallpaper.png'
             },
             Description: {
                 Title: 'Testing Inteligente y Aseguramiento Continuo',
                 Text1: 'Servicio de aseguramiento de calidad para garantizar que cada solución tecnológica cumpla con los más altos estándares de funcionalidad, rendimiento y seguridad.',
-                Img: './assets/images/bpo_left.png',
+                Img: './assets/images/qa_service.png',
                 SubTitle: '¿En qué consiste?',
                 Text2: `<p>La calidad de software supervisa y valida cada etapa del desarrollo para asegurar que las soluciones cumplan con estándares técnicos y expectativas del negocio, tanto en sistemas nuevos como existentes.</p> 
                         </br>

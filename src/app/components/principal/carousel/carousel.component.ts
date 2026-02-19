@@ -19,7 +19,7 @@ export class CarouselComponent implements OnInit{
   Text!: string;
   servicios!: any[];
   //responsiveOptions: any[];
-  
+
   ngOnInit(): void {
     this.Title = Text.Principal.Services.Title;
     this.Text = Text.Principal.Services.Text;

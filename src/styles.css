@@ -108,6 +108,7 @@ body {
 
 body {
     background-color: var(--background_color);
+    overflow-x: hidden;
 }
 
 @media(prefers-color-scheme: dark) {

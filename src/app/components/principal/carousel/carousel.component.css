@@ -110,14 +110,14 @@ ul {
     .carousel-control-next-icon {
         filter: invert(1) grayscale(0);
     }
-    
+
     .carousel-control-prev-icon{
         filter: invert(1) grayscale(0);
     }
 }
 
 @media only screen and (max-width: 1200px) {
-    
+
     .servicio-list {
         display: flex;
         flex-direction: column;
