@@ -439,7 +439,7 @@ export const Text: any = {
         Title: {
             Title: 'ETL SOLUCIONES',
             Text: 'Nuestra Empresa',
-            Img: './assets/wallpapers/image_aboutUs.jpg'
+            Img: './assets/wallpapers/image_aboutUs.png'
         },
         Info: {
             Title: 'Expertos en soluciones de Alto Impacto',
