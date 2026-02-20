@@ -67,6 +67,32 @@
     color: var(--error_message);
 }
 
+.feedback_message {
+    padding: 14px 20px;
+    border-radius: var(--box_border_radius_options);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    font-weight: var(--font_weight_semi_bold);
+}
+
+.success_message {
+    background-color: rgba(0, 177, 237, 0.15);
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+}
+
+.error_banner {
+    background-color: rgba(177, 0, 0, 0.1);
+    color: var(--error_message);
+    border: 1px solid var(--error_message);
+}
+
+.custom_button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 1200px) {
 
     .formContent .form .form_item input,

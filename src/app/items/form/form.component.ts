@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { NgForm } from '@angular/forms';
-
+import { Component, inject } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-form',
@@ -11,6 +10,8 @@ import { NgForm } from '@angular/forms';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  private readonly emailService = inject(EmailService);
+
   formData = {
     name: '',
     email: '',
@@ -19,17 +20,31 @@ export class FormComponent {
   };
 
   submitted = false;
+  isLoading = false;
+  successMessage = '';
+  errorMessage = '';
 
-  onSubmit(form: NgForm) {
+  onSubmit(form: NgForm): void {
     this.submitted = true;
+    this.successMessage = '';
+    this.errorMessage = '';
 
     if (form.invalid) {
       return;
     }
 
-    alert('¡Formulario enviado correctamente!');
-    form.resetForm();
-    this.submitted = false;
-  }
+    this.isLoading = true;
 
+    this.emailService.sendEmail(this.formData)
+      .then(() => {
+        this.isLoading = false;
+        this.successMessage = '¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.';
+        form.resetForm();
+        this.submitted = false;
+      })
+      .catch(() => {
+        this.isLoading = false;
+        this.errorMessage = 'Error al enviar el mensaje. Por favor, intenta de nuevo.';
+      });
+  }
 }
