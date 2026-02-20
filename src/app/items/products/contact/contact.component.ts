@@ -15,4 +15,11 @@ export class ContactComponent implements OnInit{
   
   ngOnInit(): void {
   }
+
+  scrollToContact(): void {
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  } 
 }

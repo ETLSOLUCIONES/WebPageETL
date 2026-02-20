@@ -551,14 +551,14 @@ export const Text: any = {
                 MeansContact: [
                     {
                         MeansContact1: [
-                            {img:'./assets/icons/phone.png', text: 'Números', info: '+57 1 300 4345'},
+                            {img:'./assets/icons/phone.png', text: 'Números', info: '(601) 615 4362'},
                             {img:'./assets/icons/mail.png', text: 'Correo', info: 'info@etlsoluciones.com'}
                         ]
                     },
                     {
                         MeansContact2: [
-                            {img:'./assets/icons/whatsapp.png', text: 'WhatsApp', info: '+57 1 300 4345'},
-                            {img:'./assets/icons/ubication.png', text: 'Oficina', info: 'Carrera. 14 # 94a- 61,  Oficina 303'}
+                            {img:'./assets/icons/whatsapp.png', text: 'WhatsApp', info: '+57 311 5613101'},
+                            {img:'./assets/icons/ubication.png', text: 'Oficina', info: 'Carrera 72 # 81 B 13 – Edificio Connecta 80 – Torre Fura – Piso 5, Bogotá, Colombia'}
                         ]
                     }
                 ]

@@ -21,10 +21,6 @@
     width: 100%;
 }
 
-.contact_information .content_contact .row_info:last-child {
-    margin-left: 15px;
-}
-
 .contact_information .content_contact .row_info .content_info {
     margin: auto;
     text-align: center;
