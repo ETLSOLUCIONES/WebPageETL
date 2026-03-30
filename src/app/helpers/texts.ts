@@ -246,6 +246,23 @@ export const Text: any = {
                         </br>
                         <p>La automatización inteligente permite a las organizaciones concentrarse en actividades de alto valor, optimizar recursos y avanzar con solidez en su transformación digital, creando procesos más ágiles, confiables y escalables.</p>`
             },
+            Features: [
+                {
+                    Icon: 'assets/icons/blocks-and-arrows.png',
+                    Title: 'Eliminación de tareas repetitivas',
+                    Text: 'Eliminación de tareas repetitivas ejecutadas manualmente y que están basadas en reglas de negocio.'
+                },
+                {
+                    Icon: 'assets/icons/data-display.png',
+                    Title: 'Simulación del usuario',
+                    Text: 'Simulación del usuario en interacción y clics frente a una pantalla.'
+                },
+                {
+                    Icon: 'assets/icons/spanner.png',
+                    Title: 'Integración de procesos técnicos',
+                    Text: 'Integración de procesos técnicos sin ejecuciones manuales disminuyendo errores por ejecuciones de analistas y/o usuarios.'
+                }
+            ],
             Contact: {
                 Title: 'Contáctenos',
                 Text: '¡Contáctenos ahora y lleva tu negocio al siguiente nivel con nuestras soluciones tecnológicas de alto impacto!',
