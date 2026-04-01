@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(find 'c:\\\\Users\\\\User\\\\Documents\\\\Desarrollos\\\\WEB ETL\\\\WebPageETL\\\\src\\\\app\\\\components' -type f -name *.css)",
-      "Bash(find \"c:\\\\Users\\\\User\\\\Documents\\\\Desarrollos\\\\WEB ETL\\\\WebPageETL\\\\src\\\\app\\\\components\" -name \"*.css\" -exec grep -l \"padding.*[0-9]\\\\+.*[0-9]\\\\+\" {})"
-    ]
-  }
-}
