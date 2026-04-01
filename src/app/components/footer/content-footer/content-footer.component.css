@@ -21,6 +21,7 @@
     flex: 1;
     background-color: var(--box_container);
     padding: 60px 50px;
+    border-right: 1px solid var(--background_color);
 }
 
 .content_footer .top_section .box_card .box_form {
@@ -52,6 +53,22 @@
     .content_footer .top_section .box_card .box_info,
     .content_footer .top_section .box_card .box_form {
         padding: 40px 30px;
+        border-right: none;
+    }
+
+    .content_footer .top_section .box_card {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .content_footer .top_section .box_card .box_info {
+        background-color: transparent;
+    }
+
+    .content_footer .top_section .box_card .box_form {
+        border-radius: var(--box_border_radius_options);
+        box-shadow: var(--box_shadow);
+        margin: auto 50px;
     }
 }
 
