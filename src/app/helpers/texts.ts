@@ -160,7 +160,7 @@ export const Text: any = {
             Title:{
                 Title: 'Gestión de Operaciones de TI',
                 Text: 'Garantizamos la eficiencia y disponibilidad de su infraestructura tecnológica',
-                Img: './assets/wallpapers/wallp_consultoria.jpg'
+                Img: './assets/wallpapers/wallp_consultoria.png'
             },
             Description: {
                 Title: 'Supervisión y Optimización Continua',
