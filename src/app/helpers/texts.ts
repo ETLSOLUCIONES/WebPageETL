@@ -250,7 +250,7 @@ export const Text: any = {
             },
             Features: [
                 {
-                    Icon: '',
+                    Icon: 'assets/icons/tareas-repetitivas.png',
                     Title: 'Eliminación de tareas repetitivas',
                     Text: 'Eliminación de tareas repetitivas ejecutadas manualmente y que están basadas en reglas de negocio.'
                 },
