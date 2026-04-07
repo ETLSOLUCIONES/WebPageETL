@@ -572,7 +572,7 @@ export const Text: any = {
                 },
                 {
                     title: 'Automatización & RPA',
-                    frontImage: '',
+                    frontImage: 'assets/icons/automation-rpa.svg',
                     description: 'Automatizamos procesos para reducir costos, errores y tiempos operativos.',
                     tecnologies: [
                         'UiPath, Automation Anywhere',
@@ -589,7 +589,7 @@ export const Text: any = {
                 },
                 {
                     title: 'Analítica & Business Intelligence',
-                    frontImage: '',
+                    frontImage: 'assets/icons/analytics-bi.svg',
                     description: 'Convertimos los datos en información estratégica para la toma de decisiones.',
                     tecnologies: [
                         'Power BI',
@@ -635,7 +635,7 @@ export const Text: any = {
                 },
                 {
                     title: 'Diseños UX/UI',
-                    frontImage: '',
+                    frontImage: 'assets/icons/ux-ui-design.svg',
                     description: 'Diseñamos interfaces visuales que unifican el producto, eliminan la inconsistencia estética, garantizando sistemas de diseño escalables y experiencias digitales fluidas.',
                     tecnologies: [
                         'Figma',
