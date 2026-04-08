@@ -683,11 +683,11 @@ export const Text: any = {
             Menu: [
                 'Inicio',
                 'Servicio',
-                'Productos',
+                //'Productos',
                 'Nosotros',
             ],
             Img:"./assets/images/image1.png",
-            Text2: "&copy; 2024 ETL Soluciones. Todos los derechos reservados."
+            Text2: "&copy; 2026 ETL Soluciones. Todos los derechos reservados."
         }
     }
 }
